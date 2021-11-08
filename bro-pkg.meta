@@ -1,0 +1,4 @@
+[package]
+description = Conducts file carving on specific MIME detected entities in sessions
+tags = sniff, file, mime
+script_dir = scripts
