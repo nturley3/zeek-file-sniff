@@ -97,7 +97,7 @@ event file_sniff(f: fa_file, meta: fa_metadata)
 
     local c: connection;
 
-    if ( f?$http && meta$mime_type in FileSniff::mime_to_ext && Site::is_local_addr(f$http$id$orig_h) && f$http$status_code in FileSniff::http_success_status_codes)
+    if ( f?$http && meta$mime_type in FileSniff::mime_to_ext && ((Site::is_local_addr(f$http$id$orig_h) && check_only_local_net==T) || check_only_local_net==F) && f$http$status_code in FileSniff::http_success_status_codes)
     {
         # Set the extraction filename and determine an "appropriate" file extension
         local ftype = "";
