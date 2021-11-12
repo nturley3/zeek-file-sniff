@@ -5,6 +5,8 @@ Zeek module which conducts file carving on specific MIME detected entities in se
 
 ## Installation/Upgrade
 
+This script was tested using Zeek 3.0.11
+
 This is easiest to install through the Zeek package manager::
 
 	zkg refresh
