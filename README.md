@@ -21,7 +21,9 @@ See the [Zeek Package Manager Docs](https://docs.zeek.org/projects/package-manag
 
 ## Configuration
 
-Nothing special required. Module will automatically generate the notice logs.
+The config.zeek file gives Zeek admins the option to check only local networks.
+Module will automatically generate the notice logs.
+
 
 ## Generated Outputs
 
